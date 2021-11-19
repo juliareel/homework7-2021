@@ -7,6 +7,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function () {
 	console.log("Play Video");
+	output.innerHTML = slider.value+"%"
 	video.play();
 });
 
@@ -47,6 +48,7 @@ document.querySelector("#mute").addEventListener("click", function () {
 
 var slider = document.getElementById("slider");
 var output = document.getElementById("volume");
+
 
 slider.oninput = function() {
 	output.innerHTML = this.value+"%";
